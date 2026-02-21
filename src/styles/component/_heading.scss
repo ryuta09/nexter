@@ -1,0 +1,29 @@
+@use '../global' as g;
+
+%heading {
+  font-family: g.$font-display;
+  font-weight: 400;
+}
+
+.c-heading-1 {
+  @extend %heading;
+}
+.c-heading-2 {
+  @extend %heading;
+}
+.c-heading-3 {
+  @extend %heading;
+}
+
+.c-heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+
+  &--light {
+    color: g.$color-grey-light-1;
+  }
+
+  &--dark {
+    color: g.$color-grey-dark-1
+  }
+}

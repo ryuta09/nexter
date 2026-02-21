@@ -1,5 +1,6 @@
 @use '../global' as g;
 
 .l-header {
-
+  background: g.$color-grey-dark-1;
+  grid-column: full-start / col-end 6;
 }

@@ -1,6 +1,6 @@
 @use '../global' as g;
 
-.l-footer {
+.p-homes {
   background: g.$color-secondary;
-  grid-column: full-start / full-end;
+  grid-column: center-start / center-end;
 }

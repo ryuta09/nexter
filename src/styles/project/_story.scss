@@ -1,0 +1,15 @@
+@use '../global' as g;
+
+.p-story {
+  &__pictures {
+    background: g.$color-primary;
+    grid-column: full-start / col-end 4;
+  }
+
+  &__content {
+    background: g.$color-grey-light-1;
+    grid-column: col-start 5 / full-end;
+  }
+
+  
+}

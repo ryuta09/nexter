@@ -1,6 +1,7 @@
 @use '../global' as g;
 
-.l-footer {
+.p-realtors {
   background: g.$color-secondary;
-  grid-column: full-start / full-end;
+  grid-column: col-start 7 / full-end;
 }
+

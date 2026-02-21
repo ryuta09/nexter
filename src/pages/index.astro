@@ -1,9 +1,83 @@
 ---
+import Footer from '../layouts/Footer.astro';
+import Header from '../layouts/Header.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Nexter">
-	<section>
-		<h1>ここにmainが入ります。</h1>
-	</section>
+	<div class="l-sidebar">
+    sidebar
+  </div>
+  <Header />
+
+  <div class="p-realtors">
+    TOP3
+  </div>
+  
+  <section class="p-features">
+    <div class="p-features__item">
+      <svg class="p-features__icon">
+        <use xlink:href="/assets/images/sprite.svg#icon-global"></use>
+      </svg>
+      <h4 class="p-features__heading-4 c-heading-4 c-heading-4--dark">Word's best luxury homes</h4>
+      <p class="p-features__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus       
+      </p>
+    </div>
+    <div class="p-features__item">
+      <svg class="p-features__icon">
+        <use xlink:href="/assets/images/sprite.svg#icon-trophy"></use>
+      </svg>
+      <h4 class="p-features__heading-4 c-heading-4 c-heading-4--dark">Only the best properties</h4>
+      <p class="p-features__text">
+        Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.
+      </p>
+    </div>
+    <div class="p-features__item">
+      <svg class="p-features__icon">
+        <use xlink:href="/assets/images/sprite.svg#icon-map-pin"></use>
+      </svg>
+      <h4 class="p-features__heading-4 c-heading-4 c-heading-4--dark">All homes in top locations</h4>
+      <p class="p-features__text">
+        Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.
+      </p>
+    </div>
+    <div class="p-features__item">
+      <svg class="p-features__icon">
+        <use xlink:href="/assets/images/sprite.svg#icon-key"></use>
+      </svg>
+      <h4 class="p-features__heading-4 c-heading-4--dark">New home in one week</h4>
+      <p class="p-features__text">
+        Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
+    <div class="p-features__item">
+      <svg class="p-features__icon">
+        <use xlink:href="/assets/images/sprite.svg#icon-presentation"></use>
+      </svg>
+      <h4 class="p-features__heading-4 c-heading-4 c-heading-4--dark">Top 1% realtors</h4>
+      <p class="p-features__text">
+        Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio necessitatibus pariatur voluptatibus.
+      </p>
+    </div>
+    <div class="p-features__item">
+      <svg class="p-features__icon">
+        <use xlink:href="/assets/images/sprite.svg#icon-lock"></use>
+      </svg>
+      <h4 class="p-features__heading-4 c-heading-4 c-heading-4--dark">Secure payments on nexter</h4>
+      <p class="p-features__text">
+        Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.
+      </p>
+    </div>
+  </section>
+
+  <div class="p-story__pictures">Story Pictures</div>
+
+  <div class="p-story__content">Story Content</div>
+
+  <section class="p-homes"></section>
+
+  <section class="p-gallery">gallery</section>
+
+  <Footer />
 </Layout>

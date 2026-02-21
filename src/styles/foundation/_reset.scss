@@ -89,7 +89,6 @@ body {
 }
 
 :where(img, picture, svg) {
-	max-inline-size: 100%;/* images should never overflow past the available space */
 	block-size: auto;/* アスペクト比を保持 */
 }
 

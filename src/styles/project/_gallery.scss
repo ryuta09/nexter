@@ -1,6 +1,6 @@
 @use '../global' as g;
 
-.l-footer {
-  background: g.$color-secondary;
+.p-gallery {
+  background: g.$color-grey-dark-1;
   grid-column: full-start / full-end;
 }

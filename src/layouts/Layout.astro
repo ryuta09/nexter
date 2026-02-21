@@ -13,7 +13,7 @@ import { SEO } from "astro-seo";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <SEO
       title={title}
-      description="簡単なプロフィールと自分がアウトプットしているブログを一覧として掲載しているポートフォリオです。お問い合わせも受け付けてます。"
+      description="Nexterは、Udemy講座のサンプルサイトです。"
       openGraph={{
         basic: {
           title: title,
@@ -31,19 +31,16 @@ import { SEO } from "astro-seo";
             name: "twitter:image",
             content: "/assets/images/SEO.webp",
           },
-          { name: "twitter:title", content: "ポートフォリオ" },
-          { name: "twitter:description", content: "簡単なプロフィールと自分がアウトプットしているブログを一覧として掲載しているポートフォリオです。お問い合わせも受け付けてます。" },
+          { name: "twitter:title", content: "Nexter" },
+          { name: "twitter:description", content: "Nexterは、Udemy講座のサンプルサイトです。" },
         ],
       }}
     />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
   </head>
-  <body>
-    <Header />
-    <main class="l-main">
-      <slot />
-    </main>
-    <Footer />
+  <body class="l-container">
+    <slot />
     <script type="module" src="/assets/js/index.js"></script>
   </body>
 </html>

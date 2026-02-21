@@ -1,0 +1,19 @@
+@use '../global' as g;
+
+.c-button {
+  background: g.$color-primary;
+  color: g.$white;
+  border: none;
+  border-radius: 0;
+  font-family: g.$font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor:  pointer;
+  line-height: 1;
+  transition: all .2s;
+
+  &:hover {
+    background: g.$color-primary-dark;
+  }
+}

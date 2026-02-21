@@ -10,9 +10,23 @@
 }
 .c-heading-2 {
   @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+
+  &--light {
+    color: g.$color-grey-light-1;
+  }
+
+  &--dark {
+    color: g.$color-grey-dark-1
+  }
 }
 .c-heading-3 {
   @extend %heading;
+  font-size: 1.6rem;
+  color: g.$color-primary;
+  text-transform: uppercase
 }
 
 .c-heading-4 {
@@ -27,3 +41,4 @@
     color: g.$color-grey-dark-1
   }
 }
+

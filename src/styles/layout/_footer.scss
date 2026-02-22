@@ -3,4 +3,53 @@
 .l-footer {
   background: g.$color-secondary;
   grid-column: full-start / full-end;
+  padding: 8rem;
+
+  &__nav {
+
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    color: g.$white;
+    &:link,
+    &:visited {
+      padding: 1.5rem;
+      display: block;
+      font-size: 1.4rem;
+      color: g.$white;
+      font-family: g.$font-display;
+      text-transform: uppercase;
+      text-align: center;
+      transition: all .2s;
+      background: rgba(g.$white, .05);
+    }
+
+    &:hover,
+    &:active {
+      transform: translateY(-3px);
+    }
+  }
+
+  &__copyright {
+    color: g.$color-grey-light-2;
+    margin-top: 6rem;
+    text-align: center;
+    width: 100%;
+    margin-inline: auto;
+    @include g.mq(md) {
+      width: 70%;
+    }
+  }
 }

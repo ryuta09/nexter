@@ -14,7 +14,7 @@ export default defineConfig({
     }),
     relativeLinks(),
   ],
-  outDir: './dist',
+  outDir: './nexter',
   build: {
     format: 'file'
   },

@@ -7,6 +7,9 @@
 
 .c-heading-1 {
   @extend %heading;
+  font-size: 4.5rem;
+  color: g.$color-grey-light-1;
+  line-height: 1;
 }
 .c-heading-2 {
   @extend %heading;

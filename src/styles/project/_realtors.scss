@@ -3,5 +3,28 @@
 .p-realtors {
   background: g.$color-secondary;
   grid-column: col-start 7 / full-end;
+  padding: 3rem;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 2rem;
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    gap: 5vh 2rem;
+  }
+
+  &__img {
+    width:  7rem;
+    border-radius: 50%;
+    display: block;
+  }
+
+  &__sold {
+    text-transform: uppercase;
+    color: g.$color-grey-light-2;
+    margin-top: -3px;
+  }
 }
 

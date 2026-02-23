@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import compress from "astro-compress"; //css,js,htmlなどを圧縮
-import relativeLinks from "astro-relative-links";//相対パスに対応
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +11,6 @@ export default defineConfig({
       HTML      : false,
       JavaScript: false,
     }),
-    relativeLinks(),
   ],
   outDir: './nexter',
   build: {

@@ -2,17 +2,28 @@
 
 .p-realtors {
   background: g.$color-secondary;
-  grid-column: col-start 7 / full-end;
+  grid-column: 1 / -1;
   padding: 3rem;
   display: grid;
   place-content: center;
   place-items: center;
   gap: 2rem;
+
+  @include g.mq(lg) {
+    grid-column: col-start 7 / full-end;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
     align-items: center;
     gap: 5vh 2rem;
+    @include g.mq(sm) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+    @include g.mq(lg) {
+      grid-template-columns: min-content max-content;
+    }
   }
 
   &__img {

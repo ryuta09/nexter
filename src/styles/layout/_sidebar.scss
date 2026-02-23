@@ -2,10 +2,17 @@
 
 .l-sidebar {
   background: g.$color-primary;
-  grid-column: sidebar-start / sidebar-end;
-  grid-row: 1  / -1;
+  grid-column: 1 / -1;
+  grid-row: 1  / 2;
   display: grid;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  @include g.mq(lg) {
+    grid-row: 1  / -1;
+    grid-column: sidebar-start / sidebar-end;
+    justify-content: center;
+    align-items: baseline;
+  }
 
   &__btn {
     border: none;
@@ -13,7 +20,12 @@
     background: g.$white;
     height: 2px;
     width: 4.5rem;
-    margin-top: 4rem;
+    margin-top: 0;
+    margin-right: 3rem;
+    @include g.mq(lg) {
+      margin-top: 4rem;
+      margin-right: 0;
+    }
 
     &::before,
     &::after {
@@ -25,10 +37,16 @@
     }
 
     &::before {
-      transform: translateY(-1.5rem);
+      transform: translateY(-1rem);
+      @include g.mq(lg) {
+        transform: translateY(-1.5rem);
+      }
     }
     &::after {
-      transform: translateY(1.3rem);
+      transform: translateY(1rem);
+      @include g.mq(lg) {
+        transform: translateY(1.3rem);
+      }
     }
   }
 }

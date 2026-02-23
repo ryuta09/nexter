@@ -10,7 +10,11 @@
 
 html {
   text-size-adjust: 100%;
-  font-size: 62.5%;
+  font-size: 50%;
+
+  @include mq(lg) {
+    font-size: 62.5%;
+  }
 }
 
 body {

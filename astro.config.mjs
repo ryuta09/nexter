@@ -3,7 +3,7 @@ import compress from "astro-compress"; //css,js,htmlなどを圧縮
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/nexter",
+  base: process.env.NODE_ENV === 'production' ? '/nexter/' : '/',
   integrations: [
     //css,html,jsの圧縮を無効
     compress({
